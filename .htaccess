@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^(index|login|blog|category|search|user|library)$ $1.php [NC,L]
+RewriteRule ^blog-single/(\d+)$  blog-single.php?page_id=$1 [NC,L]
+RewriteRule ^comment_single/(\d+)$  comment_single.php?post_id=$1 [NC,L]
+RewriteRule ^edit_schedule/(\d+)$  edit_schedule.php?schedule_id=$1 [NC,L]
+RewriteRule ^schedule_page/(\d+)$  schedule_page.php?single_s=$1 [NC,L]
+RewriteRule ^search/(\d+)$  search.php?search_input=$1 [NC,L]
+RewriteRule ^category/(\d+)$  category.php?category_id=$1 [NC,L]
